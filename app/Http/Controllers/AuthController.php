@@ -12,4 +12,10 @@ class AuthController extends Controller
         $title = 'Register';
         return view('auth.register', compact('title'));
     }
+
+    
+    public function showLoginForm(){
+        $title = 'Login';
+        return view('auth.login', compact('title'));
+    }
 }
